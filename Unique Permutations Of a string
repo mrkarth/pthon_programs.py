@@ -1,0 +1,5 @@
+from itertools import permutations
+st=input()
+s=permutations(st)
+for i in s:
+    print("".join(i), end=" ")
