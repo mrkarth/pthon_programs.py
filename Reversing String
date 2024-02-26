@@ -1,0 +1,4 @@
+s=input()
+ss=s[::-1]
+for i in ss.split("."):
+    print(i[::-1],end=".")
