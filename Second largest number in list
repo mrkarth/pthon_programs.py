@@ -1,0 +1,10 @@
+l=list(map(int,input().split()))
+largest=l[0]
+sec_largest=l[0]
+for i in range(1,len(l)):
+    if l[i]>largest:
+        sec_largest=largest
+        largest=l[i]
+    elif l[i]>sec_largest and l[i]!=largest:
+        sec_largest=l[i]
+print(sec_largest)
