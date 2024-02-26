@@ -1,0 +1,22 @@
+row=int(input())
+col=int(input())
+arr=[]
+for i in range(0,row):
+    l=[]
+    for j in range(0,col):
+        l.append(int(input()))
+    arr.append(l)
+for i in range(row):
+    for j in range(col):
+        print(arr[i][j], end=" ")
+    print()
+
+
+		OR
+
+
+mat=[[int(input()) for x in range(col)] for y in range(row)]
+for i in range(row):
+    for j in range(col):
+        print(mat[i][j], end=" ")
+    print()
