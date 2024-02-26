@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+c=list(bin(a^b)[2:])
+count=0
+print(bin(a)[2:])
+print(bin(b)[2:])
+for i in c:
+    if i=="1":
+        count+=1
+print(count)
